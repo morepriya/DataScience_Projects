@@ -7,13 +7,13 @@
 - Load The Data.
 - Dataset Summary & Exploration
 - Data Preprocessing.
-- Shuffling.
-- Grayscaling.
-- Local Histogram Equalization.
-- Normalization.
+  - Shuffling.
+  - Grayscaling.
+  - Local Histogram Equalization.
+  - Normalization.
 - Design a Model Architecture.
-- LeNet-5.
-- VGGNet.
+  - LeNet-5.
+  - VGGNet.
 - Model Training and Evaluation.
 - Testing the Model Using the Test Set.
 - Testing the Model on New Images.
