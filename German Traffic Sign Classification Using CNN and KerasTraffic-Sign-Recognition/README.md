@@ -154,3 +154,6 @@ We observe some clusters in the confusion matrix above. It turns out that the va
 
 # Step 7: Testing the Model on New Images
 ![Screenshot](output.png)
+
+# Conclusion
+![Screenshot](plots.png)
