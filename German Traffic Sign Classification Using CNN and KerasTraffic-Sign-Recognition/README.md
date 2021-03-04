@@ -65,7 +65,7 @@ Input => Convolution => ReLU => Pooling => Convolution => ReLU => Pooling => Ful
 
 **Layer 1 (Convolutional):** The output shape should be 28x28x6.
 
-![Screenshot](model.png)
+![Screenshot](architecture.png)
 
 **Activation.** Your choice of activation function.
 
@@ -153,13 +153,4 @@ Now we'll plot the confusion matrix to see where the model actually fails.
 We observe some clusters in the confusion matrix above. It turns out that the various speed limits are sometimes misclassified among themselves. Similarly, traffic signs with traingular shape are misclassified among themselves. We can further improve on the model using hierarchical CNNs to first identify broader groups (like speed signs) and then have CNNs to classify finer features (such as the actual speed limit).
 
 # Step 7: Testing the Model on New Images
-
-
-
-
-
-
-
-
-
-
+![Screenshot](output.png)
