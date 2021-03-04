@@ -18,3 +18,6 @@
 - Testing the Model Using the Test Set.
 - Testing the Model on New Images.
 
+# Step 1: Load The Data
+
+
