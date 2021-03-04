@@ -64,7 +64,8 @@ This ConvNet follows these steps:
 Input => Convolution => ReLU => Pooling => Convolution => ReLU => Pooling => FullyConnected => ReLU => FullyConnected
 
 **Layer 1 (Convolutional):** The output shape should be 28x28x6.
-![Screenshot](C:/Users/priya/Desktop/IMS Proschool/Data Science Projects/German Traffic Sign Classification Using CNN and Keras/Traffic-Sign-Recognition-master/model.png)
+
+![Screenshot](model.png)
 
 
 
