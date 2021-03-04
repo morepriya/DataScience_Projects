@@ -50,6 +50,22 @@ In this step, we will apply several preprocessing steps to the input images to a
 
 4. **Normalization:** Normalization is a process that changes the range of pixel intensity values. Usually the image data should be normalized so that the data has mean zero and equal variance.
 
+# Step 4: Design a Model Architecture
+In this step, we will design and implement a deep learning model that learns to recognize traffic signs.
+We'll use Convolutional Neural Networks to classify the images in this dataset. The reason behind choosing ConvNets is that they are designed to recognize visual patterns directly from pixel images with minimal preprocessing. They automatically learn hierarchies of invariant features at every level from data. We will implement two of the most famous ConvNets. Our goal is to reach an accuracy of +95% on the validation set.
+I'll start by explaining each network architecture, then implement it using TensorFlow
+
+**Notes**: 1. We specify the learning rate of 0.001, which tells the network how quickly to update the weights.
+           2. We minimize the loss function using the Adaptive Moment Estimation (Adam) Algorithm.
+           3. we will run `minimize()` function on the optimizer which use backprobagation to update the network and minimize our training loss.
+
+This ConvNet follows these steps:
+
+Input => Convolution => ReLU => Pooling => Convolution => ReLU => Pooling => FullyConnected => ReLU => FullyConnected
+
+**Layer 1 (Convolutional):** The output shape should be 28x28x6.
+![Screenshot](C:/Users/priya/Desktop/IMS Proschool/Data Science Projects/German Traffic Sign Classification Using CNN and Keras/Traffic-Sign-Recognition-master/model.png)
+
 
 
 
