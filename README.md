@@ -67,6 +67,99 @@ Input => Convolution => ReLU => Pooling => Convolution => ReLU => Pooling => Ful
 
 ![Screenshot](model.png)
 
+**Activation.** Your choice of activation function.
+
+**Pooling.** The output shape should be 14x14x6.
+
+**Layer 2 (Convolutional):** The output shape should be 10x10x16.
+
+**Activation.** Your choice of activation function.
+
+**Pooling.** The output shape should be 5x5x16.
+
+**Flattening:** Flatten the output shape of the final pooling layer such that it's 1D instead of 3D.
+
+**Layer 3 (Fully Connected):** This should have 120 outputs.
+
+**Activation.** Your choice of activation function.
+
+**Layer 4 (Fully Connected):** This should have 84 outputs.
+
+**Activation.** Your choice of activation function.
+
+**Layer 5 (Fully Connected):** This should have 10 outputs.
+
+This ConvNet follows these steps:
+
+Input => Convolution => ReLU => Convolution => ReLU => Pooling => Convolution => ReLU => Convolution => ReLU => Pooling => Convolution => ReLU => Convolution => ReLU => Pooling => FullyConnected => ReLU => FullyConnected => ReLU => FullyConnected
+
+**Layer 1 (Convolutional):** The output shape should be 32x32x32.
+
+**Activation.** Your choice of activation function.
+
+**Layer 2 (Convolutional):** The output shape should be 32x32x32.
+
+**Activation.** Your choice of activation function.
+
+**Layer 3 (Pooling):** The output shape should be 16x16x32.
+
+**Layer 4 (Convolutional):** The output shape should be 16x16x64.
+
+**Activation.** Your choice of activation function.
+
+**Layer 5 (Convolutional):** The output shape should be 16x16x64.
+
+**Activation.** Your choice of activation function.
+
+**Layer 6 (Pooling):** The output shape should be 8x8x64.
+
+**Layer 7 (Convolutional):** The output shape should be 8x8x128.
+
+**Activation.** Your choice of activation function.
+
+**Layer 8 (Convolutional):** The output shape should be 8x8x128.
+
+**Activation.** Your choice of activation function.
+
+**Layer 9 (Pooling):** The output shape should be 4x4x128.
+
+**Flattening:** Flatten the output shape of the final pooling layer such that it's 1D instead of 3D.
+
+**Layer 10 (Fully Connected):** This should have 128 outputs.
+
+**Activation.** Your choice of activation function.
+
+**Layer 11 (Fully Connected):** This should have 128 outputs.
+
+**Activation.** Your choice of activation function.
+
+**Layer 12 (Fully Connected):** This should have 43 outputs.
+
+# Step 5: Model Training and Evaluation
+In this step, we will train our model using normalized_images, then we'll compute softmax cross entropy between logits and labels to measure the model's error probability.
+
+Now, we'll run the training data through the training pipeline to train the model.
+
+- Before each epoch, we'll shuffle the training set.
+- After each epoch, we measure the loss and accuracy of the validation set.
+- And after training, we will save the model.
+- A low accuracy on the training and validation sets imply underfitting. A high accuracy on the training set but low accuracy on the validation set implies overfitting.
+
+# Step 6: Testing the Model using the Test Set
+Now, we'll use the testing set to measure the accuracy of the model over unknown examples. We've been able to reach a Test accuracy of 96.06%. A remarkable performance.
+
+Now we'll plot the confusion matrix to see where the model actually fails.
+
+We observe some clusters in the confusion matrix above. It turns out that the various speed limits are sometimes misclassified among themselves. Similarly, traffic signs with traingular shape are misclassified among themselves. We can further improve on the model using hierarchical CNNs to first identify broader groups (like speed signs) and then have CNNs to classify finer features (such as the actual speed limit).
+
+# Step 7: Testing the Model on New Images
+
+
+
+
+
+
+
 
 
 
