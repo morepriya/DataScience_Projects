@@ -19,5 +19,11 @@
 - Testing the Model on New Images.
 
 # Step 1: Load The Data
+Download the dataset from [here](https://sid.erda.dk/public/archives/daaeac0d7ce1152aea9b61d9f1e19370/published-archive.html). This is a pickled dataset in which we've already resized the images to 32x32.
+We already have three .p files of 32x32 resized images:
+* train.p: The training set.
+* test.p: The testing set.
+* valid.p: The validation set.
+We will use Python pickle to load the data.
 
 
