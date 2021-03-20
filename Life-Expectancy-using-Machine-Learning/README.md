@@ -5,8 +5,13 @@ Link : https://lifeexpectancy-prediction.herokuapp.com
 ## Project Summary
 Our aim is to predict the life expectancy of a person of a given country considering a number of factors like sex differences, mental illnesses, etc. The data set provides us with a number of factors which could be considered to make this prediction.
 
-### Prerequisites
-You must have Scikit Learn, Pandas (for Machine Leraning Model), Flask (for API) installed  and Heroku.
+## Tools Frameworks
+* pandas : used for data analysis.
+* Numpy : perform a number of mathematical operations.
+* scikit-learn : used to build machine learning models.
+* Flask : extensible web microframework for building web applications with Python.
+* HTML and CSS
+* Heroku
 
 Functional Requirements The project is required to make the prediction of life expectancy. Moreover, it has perform data pre-processing and data analysis to make sure that accuracy could be achieved.
 
