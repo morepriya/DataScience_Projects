@@ -1,9 +1,9 @@
-
+# Predicting Life Expectancy using Machine Learning
 ## Demo
 Link : https://lifeexpectancy-prediction.herokuapp.com
 
-## Predicting Life Expectancy using Machine Learning
-Project Summary Our aim is to predict the life expectancy of a person of a given country considering a number of factors like sex differences, mental illnesses, etc. The data set provides us with a number of factors which could be considered to make this prediction.
+## Project Summary
+Our aim is to predict the life expectancy of a person of a given country considering a number of factors like sex differences, mental illnesses, etc. The data set provides us with a number of factors which could be considered to make this prediction.
 
 ### Prerequisites
 You must have Scikit Learn, Pandas (for Machine Leraning Model), Flask (for API) installed  and Heroku.
